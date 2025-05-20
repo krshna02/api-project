@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather-app</title>
+    <link rel="icon" href="images/beautiful-mountains_181624-389.avif" size type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class=" max-w-[470] px-40 py-45 rounded-2xl bg-cover bg-center min-h-screen" style="background-image: url('images/beautiful-mountains_181624-389.avif')" >
+    
+   <div class="   m-auto text-white text-center ">
+    <div class="search w-100% items-center flex place-content-center gap-1.5">
+        <input type="text"  class="rounded-2xl mt-2 text-black p-3 text-md" placeholder="Enter city name" spellcheck="false">
+        <button class="w-25px h-25px rounded-s" ><img src="images/search.png" class="w-[30px] rounded-lg border-2 border-black pointer"></button>
+    </div>
+    <div class="weather ">
+        <img  class=" w-170px m-auto" src="images/rain.png" >
+        <h1 class="temp text-[80px] font-[800px]">22°c</h1>
+        <h2 class="city text-[80px] font-[800px] mt-[-10px]">New Delhi</h2>
+        <div class="  details  items-center justify-between mt-[50px] px-[20px] py-[20px]">
+            <div class="col items-center flex place-content-center space-x-20   ">
+                <div class="flex gap-1">
+                    <img  class="w-[40px]" src="images/humidity.png ">
+                <div>
+                    <p class="humidity ">50%</p>
+                    <p>Humidity</p>
+                </div>
+                </div>
+                
+                <div class="col flex  ">
+                <img class=" object-left"  src="images/wind.png ">
+                <div>
+
+                    <p class="wind">15km/h</p>
+                    <p>WindSpeed</p>
+                </div>
+                 
+            </div>
+        </div>
+    </div>
+    
+   </div>
+</body>
+<script src="weather.js"></script>
+</html>
